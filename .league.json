@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "specs": {
+    "glob": "docs/specs/*.md",
+    "status_field": "status"
+  },
+  "build": "/sdd-build {spec}",
+  "draft": "/sdd-draft {issue}",
+  "commands": [
+    "npm test",
+    "npm run build",
+    "npm run compile",
+    "node scripts/validate-specs.js"
+  ],
+  "pre_build": [],
+  "ci_required": [
+    "CI"
+  ],
+  "protected": [
+    "**/CHANGELOG.md",
+    "scripts/release*"
+  ]
+}
