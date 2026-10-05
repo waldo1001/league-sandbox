@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Coverage
+coverage/
+
+# Auto-generated stub outputs (see scripts/)
+src/telemetryConfig.generated.js
+knowledge-base/index.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store

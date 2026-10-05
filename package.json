@@ -1,0 +1,40 @@
+{
+    "name": "league-sandbox",
+    "version": "0.1.0",
+    "description": "Throwaway shakedown repo for waldo.Jarvis's GitHub League, copying waldo.BCTelemetryBuddy's conventions",
+    "private": true,
+    "scripts": {
+        "build": "node -e \"console.log('build: nothing to build (plain JS)')\"",
+        "compile": "node --check src/math.js",
+        "test": "jest",
+        "test:coverage": "jest --coverage",
+        "generate-kb-index": "node scripts/generate-kb-index.js",
+        "validate-specs": "node scripts/validate-specs.js"
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/waldo1001/league-sandbox.git"
+    },
+    "author": "waldo",
+    "license": "MIT",
+    "devDependencies": {
+        "jest": "^29.7.0"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "collectCoverageFrom": [
+            "src/**/*.js",
+            "!src/**/__tests__/**"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "statements": 70,
+                "lines": 70,
+                "branches": 60
+            }
+        }
+    }
+}

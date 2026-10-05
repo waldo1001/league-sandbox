@@ -1,0 +1,14 @@
+# Security-scan allowlist for league-sandbox
+#
+# Format: one entry per line. Matches are exact-string, not regex.
+# Lines starting with # are comments.
+#
+# Add an entry only when a real false positive hits the scan.
+# Each entry MUST have a comment explaining why the value is safe.
+# Do not add wildcards. Do not add entries just to silence the scan.
+
+# Nil GUID, the canonical placeholder for examples and fixtures
+00000000-0000-0000-0000-000000000000
+
+# Sequential fake GUID used in examples
+12345678-1234-1234-1234-123456789012
