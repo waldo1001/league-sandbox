@@ -1,10 +1,10 @@
 ---
 spec: 3-engines-floor
 issue: 3
-status: approved
+status: implemented
 created: 2026-10-23
 approved: 2026-10-23
-plans: []
+plans: [docs/plans/done/engines-floor.md]
 ---
 
 # Spec: Raise `engines.node` to the patched Node.js releases
@@ -49,12 +49,12 @@ None — configuration-only change, no user-observable runtime surface.
 ## Verification
 | AC | Test | Status |
 |---|---|---|
-| AC1 | planned | planned |
-| AC2 | planned | planned |
-| AC3 | planned | planned |
-| AC4 | planned | planned |
+| AC1 | src/__tests__/engines.test.js: "declares engines.node as the patched-release range" | verified |
+| AC2 | src/__tests__/engines.test.js: "accepts 22.23.4, 24.22.1 and 26.12.1" | verified |
+| AC3 | src/__tests__/engines.test.js: "rejects 20.19.0, 22.23.3, 24.22.0 and 26.12.0" | verified |
+| AC4 | src/__tests__/engines.test.js: "adds no dependency beyond jest" | verified |
 
 ## Links
 - Issue: #3
-- Plan(s): docs/plans/engines-floor.md
+- Plan(s): docs/plans/done/engines-floor.md
 - PR(s): —
