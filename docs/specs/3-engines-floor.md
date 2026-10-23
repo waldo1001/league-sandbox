@@ -1,9 +1,9 @@
 ---
 spec: 3-engines-floor
 issue: 3
-status: draft
+status: approved
 created: 2026-10-23
-approved:
+approved: 2026-10-23
 plans: []
 ---
 
